@@ -6,6 +6,6 @@ class AccessibleElement:
     name: str
     role: str
     value: Optional[str] = None
-    enabled: bool = true
+    enabled: bool = True
     checked: Optional[bool] = None
     

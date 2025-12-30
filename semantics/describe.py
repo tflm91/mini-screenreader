@@ -1,4 +1,4 @@
-from roles import ROLE_LABELS
+from .roles import ROLE_LABELS
 
 def describe(element): 
     parts = []
@@ -7,7 +7,7 @@ def describe(element):
         parts.append(element.name)
 
     role = element.role
-    parts.append(ROLE_LABELS.role)
+    parts.append(ROLE_LABELS[role])
 
     if element.checked is True: 
         parts.apped("aktiviert")
